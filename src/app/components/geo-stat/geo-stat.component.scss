@@ -30,6 +30,7 @@ table.table-container {
   width: 100%;
   border-collapse: collapse;
   background:linear-gradient(to right, #275345, #28dbff, rgb(0, 68, 255),green,black);
+  box-shadow: 0 19px 19px 19px rgba(241, 249, 240, 0.417);
 }
 
  table.table-container td {
@@ -37,10 +38,12 @@ table.table-container {
   text-align: center;
   border: 2px solid #ccc;
 
+
 }
 table.table-container td:hover {
   background:linear-gradient(to right, #275345, #28dbff, rgb(0, 68, 255),green,black);
-  box-shadow: 0 2px 5px rgba(44, 245, 17, 0.1);
+  box-shadow: 0 19px 19px 19px rgba(241, 249, 240, 0.992);
+
 
 
 }
