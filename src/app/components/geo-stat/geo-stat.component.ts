@@ -41,15 +41,20 @@ export class GeoStatComponent implements OnInit {
 
 
   ngOnInit(): void {
-  //  this.retrieveGeoStatusInformation();
+   // this.retrieveGeoStatusInformation();
   }
 
-
+/**
+ *Retrieve status from backend
+ */
   public retrieveGeoStatusInformation():void{
 
 this.geoServ.getGeoStatus().subscribe(
-  (response:any)=>{
-    console.log(response)
+  (response:geo)=>{
+
+console.log("------------------=-==-=-=-=-=-=--=-=-==->"+response.country_calling_code);
+
+
   }
 )
   }
