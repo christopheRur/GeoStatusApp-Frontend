@@ -1,130 +1,120 @@
 <nav>
   Geo-Status</nav>
+<pre></pre>
+  <button class="btn" (click)="displayBlock()"> VIEW STATUS</button>
 
-<div class="container" >
+<div class="container" *ngIf="viewBlock">
   <table class="table-container">
     <tbody>
       <tr>
         <td>{{country}}</td>
-        <td>field</td>
+        <td>{{countryRes?countryRes:"Try again later, waiting for server response ..."}}</td>
       </tr>
       <tr>
         <td>{{city}}</td>
-        <td>field</td>
+        <td>{{cityRes}}</td>
       </tr>
       <tr>
         <td>{{country_capital}}</td>
-        <td>field</td>
+        <td>{{country_capitalRes}}</td>
       </tr>
       <tr>
         <td>{{language}}</td>
-        <td>field</td>
+        <td>{{languagesRes}}</td>
       </tr>
       <tr>
         <td>{{region}}</td>
-        <td>field</td>
+        <td>{{regionRes}}</td>
       </tr>
       <tr>
         <td>{{region_code}}</td>
-        <td>field</td>
+        <td>{{region_codeRes}}</td>
       </tr>
       <tr>
         <td>{{country_area}}</td>
-        <td>field</td>
+        <td>{{country_areaRes}}</td>
       </tr>
       <tr>
         <td>{{country_code}}</td>
-        <td>field</td>
+        <td>{{country_codeRes}}</td>
       </tr>
       <tr>
         <td>{{country_code_IS03}}</td>
-        <td>field</td>
+        <td>{{country_code_iso3Res}}</td>
       </tr>
       <tr>
         <td>{{country_name}}</td>
-        <td>field</td>
+        <td>{{country_nameRes}}</td>
       </tr>
       <tr>
         <td>{{country_population}}</td>
-        <td>field</td>
+        <td>{{country_populationRes}}</td>
       </tr>
       <tr>
         <td>{{country_tld}}</td>
-        <td>{{099}}</td>
+        <td>{{country_tldRes}}</td>
       </tr>
       <tr>
         <td>{{country_calling_code}}</td>
-        <td>field</td>
+        <td>{{country_calling_codeRes}}</td>
       </tr>
       <tr>
         <td>{{postal}}</td>
-        <td>field</td>
+        <td>{{postalRes}}</td>
       </tr>
       <tr>
         <td>{{currency}}</td>
-        <td>field</td>
+        <td>{{currencyRes}}</td>
       </tr>
       <tr>
         <td>{{currency_name}}</td>
-        <td>field</td>
+        <td>{{currency_nameRes}}</td>
       </tr>
       <tr>
         <td>{{ip}}</td>
-        <td>{{0}}</td>
+        <td>{{ipRes}}</td>
       </tr>
       <tr>
         <td>{{network}}</td>
-        <td>field</td>
+        <td>{{networkRes}}</td>
       </tr>
       <tr>
         <td>{{longitude}}</td>
-        <td>field</td>
+        <td>{{longitudeRes}}</td>
       </tr>
       <tr>
         <td>{{latitude}}</td>
-        <td>FIELD</td>
+        <td>{{latitudeRes}}</td>
       </tr>
       <tr>
         <td>{{org}}</td>
-        <td>field</td>
+        <td>{{orgRes}}</td>
       </tr>
       <tr>
         <td>{{timezone}}</td>
-        <td>FIELD</td>
+        <td>{{timezoneRes}}</td>
       </tr>
       <tr>
         <td>{{utc_offset}}</td>
-        <td>field</td>
+        <td>{{utc_offsetRes}}</td>
       </tr>
       <tr>
         <td>{{version}}</td>
-        <td>field</td>
+        <td>{{versionRes}}</td>
       </tr>
       <tr>
         <td>{{in_eu}}</td>
-        <td>field</td>
+        <td>{{in_euRes}}</td>
       </tr>
-
       <tr>
         <td>{{asn}}</td>
-        <td>field</td>
+        <td>{{asnRes}}</td>
       </tr>
       <tr>
         <td>{{continent_code}}</td>
-        <td>field</td>
+        <td>{{continent_codeRes}}</td>
       </tr>
-      <tr>
-        <td>field</td>
-        <td>field</td>
-      </tr>
-      <tr>
-        <td>field</td>
-        <td>field</td>
-      </tr>
-      <tr>
-        <td>field</td>
-        <td>field</td>
-      </tr>
+
     </tbody>
 
   </table>
