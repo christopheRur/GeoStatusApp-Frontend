@@ -1,121 +1,124 @@
-<nav>
-  Geo-Status</nav>
+<nav>Geo-Status</nav>
 <pre></pre>
-  <button class="btn" (click)="displayBlock()"> VIEW STATUS</button>
+<button class="btn" (click)="displayBlock()">VIEW STATUS</button>
 
 <div class="container" *ngIf="viewBlock">
   <table class="table-container">
     <tbody>
       <tr>
-        <td>{{country}}</td>
-        <td>{{countryRes?countryRes:"Try again later, waiting for server response ..."}}</td>
+        <td>{{ country }}</td>
+        <td>
+          {{
+            countryRes
+              ? countryRes
+              : "Try again later, waiting for server response ..."
+          }}
+        </td>
       </tr>
       <tr>
-        <td>{{city}}</td>
-        <td>{{cityRes}}</td>
+        <td>{{ city }}</td>
+        <td>{{ cityRes }}</td>
       </tr>
       <tr>
-        <td>{{country_capital}}</td>
-        <td>{{country_capitalRes}}</td>
+        <td>{{ country_capital }}</td>
+        <td>{{ country_capitalRes }}</td>
       </tr>
       <tr>
-        <td>{{language}}</td>
-        <td>{{languagesRes}}</td>
+        <td>{{ language }}</td>
+        <td>{{ languagesRes }}</td>
       </tr>
       <tr>
-        <td>{{region}}</td>
-        <td>{{regionRes}}</td>
+        <td>{{ region }}</td>
+        <td>{{ regionRes }}</td>
       </tr>
       <tr>
-        <td>{{region_code}}</td>
-        <td>{{region_codeRes}}</td>
+        <td>{{ region_code }}</td>
+        <td>{{ region_codeRes }}</td>
       </tr>
       <tr>
-        <td>{{country_area}}</td>
-        <td>{{country_areaRes}}</td>
+        <td>{{ country_area }}</td>
+        <td>{{ country_areaRes }}</td>
       </tr>
       <tr>
-        <td>{{country_code}}</td>
-        <td>{{country_codeRes}}</td>
+        <td>{{ country_code }}</td>
+        <td>{{ country_codeRes }}</td>
       </tr>
       <tr>
-        <td>{{country_code_IS03}}</td>
-        <td>{{country_code_iso3Res}}</td>
+        <td>{{ country_code_IS03 }}</td>
+        <td>{{ country_code_iso3Res }}</td>
       </tr>
       <tr>
-        <td>{{country_name}}</td>
-        <td>{{country_nameRes}}</td>
+        <td>{{ country_name }}</td>
+        <td>{{ country_nameRes }}</td>
       </tr>
       <tr>
-        <td>{{country_population}}</td>
-        <td>{{country_populationRes}}</td>
+        <td>{{ country_population }}</td>
+        <td>{{ country_populationRes }}</td>
       </tr>
       <tr>
-        <td>{{country_tld}}</td>
-        <td>{{country_tldRes}}</td>
+        <td>{{ country_tld }}</td>
+        <td>{{ country_tldRes }}</td>
       </tr>
       <tr>
-        <td>{{country_calling_code}}</td>
-        <td>{{country_calling_codeRes}}</td>
+        <td>{{ country_calling_code }}</td>
+        <td>{{ country_calling_codeRes }}</td>
       </tr>
       <tr>
-        <td>{{postal}}</td>
-        <td>{{postalRes}}</td>
+        <td>{{ postal }}</td>
+        <td>{{ postalRes }}</td>
       </tr>
       <tr>
-        <td>{{currency}}</td>
-        <td>{{currencyRes}}</td>
+        <td>{{ currency }}</td>
+        <td>{{ currencyRes }}</td>
       </tr>
       <tr>
-        <td>{{currency_name}}</td>
-        <td>{{currency_nameRes}}</td>
+        <td>{{ currency_name }}</td>
+        <td>{{ currency_nameRes }}</td>
       </tr>
       <tr>
-        <td>{{ip}}</td>
-        <td>{{ipRes}}</td>
+        <td>{{ ip }}</td>
+        <td>{{ ipRes }}</td>
       </tr>
       <tr>
-        <td>{{network}}</td>
-        <td>{{networkRes}}</td>
+        <td>{{ network }}</td>
+        <td>{{ networkRes }}</td>
       </tr>
       <tr>
-        <td>{{longitude}}</td>
-        <td>{{longitudeRes}}</td>
+        <td>{{ longitude }}</td>
+        <td>{{ longitudeRes }}</td>
       </tr>
       <tr>
-        <td>{{latitude}}</td>
-        <td>{{latitudeRes}}</td>
+        <td>{{ latitude }}</td>
+        <td>{{ latitudeRes }}</td>
       </tr>
       <tr>
-        <td>{{org}}</td>
-        <td>{{orgRes}}</td>
+        <td>{{ org }}</td>
+        <td>{{ orgRes }}</td>
       </tr>
       <tr>
-        <td>{{timezone}}</td>
-        <td>{{timezoneRes}}</td>
+        <td>{{ timezone }}</td>
+        <td>{{ timezoneRes }}</td>
       </tr>
       <tr>
-        <td>{{utc_offset}}</td>
-        <td>{{utc_offsetRes}}</td>
+        <td>{{ utc_offset }}</td>
+        <td>{{ utc_offsetRes }}</td>
       </tr>
       <tr>
-        <td>{{version}}</td>
-        <td>{{versionRes}}</td>
+        <td>{{ version }}</td>
+        <td>{{ versionRes }}</td>
       </tr>
       <tr>
-        <td>{{in_eu}}</td>
-        <td>{{in_euRes}}</td>
+        <td>{{ in_eu }}</td>
+        <td>{{ in_euRes }}</td>
       </tr>
       <tr>
-        <td>{{asn}}</td>
-        <td>{{asnRes}}</td>
+        <td>{{ asn }}</td>
+        <td>{{ asnRes }}</td>
       </tr>
       <tr>
-        <td>{{continent_code}}</td>
-        <td>{{continent_codeRes}}</td>
+        <td>{{ continent_code }}</td>
+        <td>{{ continent_codeRes }}</td>
       </tr>
-
     </tbody>
-
   </table>
 </div>
